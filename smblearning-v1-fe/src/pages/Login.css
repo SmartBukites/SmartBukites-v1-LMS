@@ -1,0 +1,68 @@
+.login {
+  display: grid;
+  place-content: center;
+  height: 85vh;
+}
+
+.login .center {
+  text-align: center;
+}
+
+.login h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: rgba(56, 205, 255, 1);
+}
+
+.login p {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.login form {
+  background: white;
+  padding: 3em 4.5em;
+  text-align: left;
+  margin-top: 3.3em;
+
+  box-shadow: 0px 2.3628501892089844px 11.814249992370605px 0px
+    rgba(204, 204, 204, 1);
+}
+
+.login form input {
+  height: 50px;
+}
+
+.login .btn-holders {
+  margin-top: 2em;
+}
+
+.login .btn-holders .login-btn {
+  padding: 12px 2.5em;
+  background: rgba(0, 178, 238, 1);
+  border: rgba(0, 178, 238, 1);
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .login p {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .login form {
+    background: white;
+    padding: 1.5em 2.5em;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 4em;
+    max-width: 90%;
+  }
+
+  .login .btn-holders .login-btn {
+    padding: 12px 1.35em;
+    background: rgba(0, 178, 238, 1);
+    border: rgba(0, 178, 238, 1);
+    border-radius: 15px;
+  }
+}

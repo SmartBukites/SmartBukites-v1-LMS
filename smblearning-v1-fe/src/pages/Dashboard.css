@@ -1,0 +1,144 @@
+.dashboard {
+  height: 100vh;
+  padding: 2em;
+  width: 83%;
+}
+
+.dashboard h1 {
+  font-size: 2.2em;
+  font-weight: 400;
+  line-height: 54px;
+  margin-bottom: 1.4rem;
+}
+
+.dashboard .dashboard-items div {
+  width: 31%;
+  padding: 2.5em 0;
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(196, 196, 196, 0.6);
+}
+
+.dashboard .dashboard-items p.title {
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 10px;
+}
+
+.dashboard .dashboard-items p.num {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgba(0, 178, 238, 1);
+}
+
+.dashboard h2 {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.first-row {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-row .completed svg,
+.first-row .inprogress svg {
+  margin-right: 1.2rem;
+}
+
+.second-row .charts {
+  width: 58%;
+  margin-right: 2%;
+}
+
+.second-row .bar {
+  width: 40%;
+}
+
+.second-row .bar .progress-bar {
+  width: 50%;
+}
+
+.bar .stats {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 1.5em;
+    line-height: 36px;
+  }
+  .dashboard-items {
+    flex-direction: column;
+  }
+
+  .dashboard-items div.item {
+    width: 100%;
+    margin-bottom: 1.2em;
+  }
+
+  .dashboard-items div:last-of-type(1) {
+    margin: 0;
+  }
+
+  .dashboard-items p.title {
+    font-size: 1.2em;
+    line-height: 27px;
+  }
+
+  .dashboard-items p.num {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .dashboard h2 {
+    font-size: 1.2em;
+    line-height: 27px;
+  }
+
+  .first-row {
+    width: 100%;
+  }
+
+  .first-row span {
+    font-size: 0.8em;
+    line-height: 21px;
+  }
+
+  .second-row {
+    flex-direction: column;
+  }
+
+  .second-row .charts {
+    width: 100%;
+  }
+
+  .second-row .charts p {
+    font-size: 1.2em;
+    line-height: 27px;
+  }
+
+  .second-row .bar {
+    width: 100%;
+  }
+
+  .second-row .bar p.text-center {
+    font-size: 0.8em;
+    line-height: 21px;
+  }
+
+  .second-row .bar span {
+    font-size: 0.6em;
+    line-height: 18px;
+  }
+}

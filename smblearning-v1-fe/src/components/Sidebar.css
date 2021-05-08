@@ -1,0 +1,117 @@
+.sidenav {
+  height: 100vh;
+  padding-top: 2em;
+  width: 17vw;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.sidenav .back-btn {
+  display: none;
+}
+
+.sidenav .user-avatar img {
+  width: 40%;
+}
+
+.sidenav .user-avatar .info {
+  margin-top: 1.4em;
+}
+
+.user-avatar p {
+  font-size: 0.85rem;
+  line-height: 1.54em;
+}
+
+.sidenav .user-avatar p.user-name {
+  color: rgba(0, 178, 238, 1);
+}
+
+.sidenav .nav-menu {
+  list-style: none;
+  padding-left: 0;
+  width: 85%;
+}
+
+.sidenav .nav-menu li {
+  width: 100%;
+}
+
+.sidenav .nav-menu li a {
+  font-size: 1.1rem;
+  line-height: 1.54em;
+  display: block;
+  padding: 0.85em 2em 0.85em 1.5em;
+}
+
+.sidenav .nav-menu li.active a {
+  background: rgba(0, 178, 238, 0.25);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sidenav .nav-menu li a:hover {
+  background: rgba(0, 178, 238, 0.25);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sidenav .nav-menu li span {
+  margin-left: 1.5em;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(0, 178, 238, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    width: 50vw;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-width: 300px;
+    padding-top: 0;
+  }
+
+  .sidenav .back-btn {
+    transform: scaleX(-1);
+    display: flex;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .sidenav .back-btn:hover {
+    transform: scaleX(-1) translateX(6px);
+  }
+
+  .sidenav .nav-menu {
+    width: 100%;
+  }
+
+  .sidenav .nav-menu li.active a,
+  .sidenav .nav-menu li a:hover {
+    border-radius: 0;
+  }
+
+  .sidenav .nav-menu li span {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .sidenav .nav-menu li span {
+    margin-left: 0.7em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sidenav .nav-menu li svg {
+    display: none;
+  }
+}
