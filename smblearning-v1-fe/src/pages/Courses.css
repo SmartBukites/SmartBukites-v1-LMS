@@ -1,0 +1,54 @@
+.courses {
+  padding: 2em 1.5em;
+  width: 83%;
+}
+
+.courses h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.53em;
+}
+
+.courses .cc-btn {
+  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  background: rgba(0, 128, 0, 1);
+  border: rgba(0, 128, 0, 1);
+  border-radius: 15px;
+}
+
+.courses .cc-btn:active,
+.courses .cc-btn:focus,
+.courses .cc-btn:hover {
+  background: rgba(0, 128, 0, 1);
+  border: rgba(0, 128, 0, 1);
+  box-shadow: none;
+}
+
+.courses .courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5em;
+}
+
+@media screen and (max-width: 768px) {
+  .courses h1 {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+
+  .courses .cc-btn {
+    padding: 0.375em 1em;
+    font-size: 1rem;
+    line-height: 1.5em;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .courses {
+    margin-left: auto;
+  }
+}

@@ -1,5 +1,7 @@
 import React from "react";
-import { PieChart } from "react-minimal-pie-chart";
+// import { PieChart } from "react-minimal-pie-chart";
+
+import Footer from "../components/Footer";
 import "./Dashboard.css";
 
 function Dashboard(props) {
@@ -84,7 +86,7 @@ function Dashboard(props) {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="24" height="24" fill="#00B2EE" fill-opacity="0.25" />
+              <rect width="24" height="24" fill="#00B2EE" fillOpacity="0.25" />
             </svg>
             <span>In Progress</span>
           </div>
@@ -156,7 +158,7 @@ function Dashboard(props) {
                     width="12.2776"
                     height="12.2776"
                     fill="#C4C4C4"
-                    fill-opacity="0.6"
+                    fillOpacity="0.6"
                   />
                 </svg>
                 <span className="pl-3">58% Not active</span>
@@ -165,6 +167,8 @@ function Dashboard(props) {
           </div>
         </div>
       </div>
+
+      <Footer />
     </section>
   );
 }

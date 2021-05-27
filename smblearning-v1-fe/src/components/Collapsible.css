@@ -1,0 +1,42 @@
+:root {
+  --padding: 1em;
+}
+
+details {
+  padding: 0 1em;
+  /* border-bottom: rgba(112, 112, 112, 0.25) 0.6px solid; */
+}
+details[open] {
+  padding-bottom: var(--padding);
+}
+
+details > summary {
+  display: flex;
+  padding: 0;
+  /* padding-bottom: var(--padding); */
+  margin: 0 calc(var(--padding) * -1);
+  font-size: 1.2rem;
+  cursor: pointer;
+  justify-content: space-between;
+  list-style: none; /* Hides the default arrow */
+  font-weight: 500;
+}
+
+details > summary:focus {
+  box-sizing: 0;
+}
+details[open] > summary {
+  /* box-shadow: 0 4px; */
+}
+/* Adds an icon when the <details> is closed... */
+details > summary::after {
+  content: "+";
+}
+/* ...and switches it when <details> is open */
+details[open] > summary::after {
+  content: "-";
+}
+/* Removes the ugly default arrow on Chrome */
+details > summary::-webkit-details-marker {
+  display: none;
+}

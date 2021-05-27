@@ -1,5 +1,8 @@
 @media screen and (max-width: 768px) {
-  .home .dashboard {
+  .home .dashboard,
+  .home .courses,
+  .home .users,
+  .home .new-user {
     width: 100%;
   }
 }

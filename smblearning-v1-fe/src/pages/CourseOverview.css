@@ -1,0 +1,109 @@
+.course-overview {
+  padding: 2em 1.5em;
+  width: 100%;
+}
+
+.course-overview h2 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 0.417em;
+}
+
+.course-overview .course-nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.course-overview .course-nav {
+  margin-bottom: 2.14em;
+}
+
+.course-overview .course-desc {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
+
+h2.c-over {
+  color: rgba(0, 178, 238, 1);
+  margin-bottom: 0.417em;
+}
+
+.course-overview video {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.course-overview .start-btn-holder button {
+  background: #00b2ee;
+  border: #00b2ee;
+  box-shadow: 0px 4px 15px rgba(119, 0, 119, 0.25);
+  border-radius: 15px;
+  padding: 0.9em 1.4em;
+}
+
+.course-overview .start-btn-holder {
+  margin-bottom: 2.5em;
+}
+
+.course-overview .course-progress p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.course-overview .course-outline {
+  margin-top: 1.5em;
+}
+
+.course-overview .course-outline .outline-wrap {
+  padding: 1.7em 1em;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+.course-overview .course-outline p.title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.course-overview .course-outline ul {
+  list-style: none;
+}
+
+.course-overview .course-outline li {
+  margin-bottom: 1em;
+  /* margin-left: 2em; */
+  position: relative;
+  /* border-bottom: 1px solid #cccccc; */
+}
+
+.course-overview .course-outline li:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/svgs/bullet.svg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+
+.course-overview .course-outline .sub-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 1080px) {
+  .course-overview {
+    margin-left: auto;
+    width: 83%;
+  }
+}

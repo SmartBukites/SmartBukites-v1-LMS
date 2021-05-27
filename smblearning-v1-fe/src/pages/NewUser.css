@@ -1,0 +1,68 @@
+.new-user {
+  height: 100vh;
+  padding: 2em;
+  width: 83%;
+}
+
+.new-user h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1.1em;
+}
+
+.new-user .cv {
+  /* display: grid;
+  place-content: center; */
+}
+
+.new-user .content {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #cccccc;
+  padding: 4.25em 5vw;
+}
+
+.new-user .content label {
+  font-size: 1.688rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.58em;
+}
+
+.new-user .content input,
+.new-user .content select {
+  height: 80px;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: rgba(4, 23, 42, 0.3);
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8.44388px;
+}
+
+.new-user .content option {
+  background: rgba(0, 178, 238, 1);
+}
+
+.new-user .btn-create {
+  margin-top: 3rem;
+}
+
+.new-user .btn-create button {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  background: rgba(0, 178, 238, 1);
+  border: rgba(0, 178, 238, 1);
+  padding: 0.5em 2em;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1080px) {
+  .new-user {
+    margin-left: auto;
+  }
+}

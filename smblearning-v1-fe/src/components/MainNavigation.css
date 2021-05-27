@@ -19,3 +19,16 @@ header.main-navigation .logo {
     display: inline-block;
   }
 }
+
+@media screen and (min-width: 1080px) {
+  header.main-navigation {
+    /* display: none; */
+    position: sticky;
+    z-index: 999;
+    background: #fff;
+
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}

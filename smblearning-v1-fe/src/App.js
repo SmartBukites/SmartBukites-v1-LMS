@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+
 import PrivateRoute from "./PrivateRoutes";
 
 import Home from "./pages/Home";
@@ -15,19 +16,18 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
         <Route path="/login">
           <Login />
         </Route>
         <Route path="/signup">
           <Signup />
         </Route>
-        <PrivateRoute path="/dashboard">
+
+        <PrivateRoute path="/">
           <Home />
         </PrivateRoute>
-        <Redirect to="/" />
+
+        <Redirect from="*" to="/dashboard" />
       </Switch>
     </Router>
   );

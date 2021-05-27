@@ -1,1 +1,10 @@
-{}
+{
+  "hosting": {
+    "public": "smblearning-v1-fe/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+.course-item {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(196, 196, 196, 0.6);
+}
+
+.course-item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.course-item img {
+  width: 100%;
+  height: 150px;
+}
+
+.course-item .course-body {
+  padding: 1.875em 1.25em;
+}
+
+p.course-title {
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  color: rgba(0, 178, 238, 1);
+}
