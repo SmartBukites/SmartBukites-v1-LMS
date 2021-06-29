@@ -6,20 +6,24 @@ details {
   padding: 0 1em;
   /* border-bottom: rgba(112, 112, 112, 0.25) 0.6px solid; */
 }
-details[open] {
-  padding-bottom: var(--padding);
+details[open] > summary {
+  padding-bottom: 1rem;
 }
 
 details > summary {
   display: flex;
   padding: 0;
-  /* padding-bottom: var(--padding); */
   margin: 0 calc(var(--padding) * -1);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  justify-content: space-between;
   list-style: none; /* Hides the default arrow */
-  font-weight: 500;
+  font-weight: 400;
+  align-items: center;
+  line-height: 1.55em;
+}
+details > summary > span {
+  margin-right: auto;
+  margin-left: 12px;
 }
 
 details > summary:focus {
@@ -29,8 +33,16 @@ details[open] > summary {
   /* box-shadow: 0 4px; */
 }
 /* Adds an icon when the <details> is closed... */
+
+/* ...and switches it when <details> is open */
 details > summary::after {
-  content: "+";
+  content: "";
+  background-image: url("../assets/svgs/bullet.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 14.45px;
 }
 /* ...and switches it when <details> is open */
 details[open] > summary::after {

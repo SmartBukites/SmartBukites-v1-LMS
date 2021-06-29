@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import CourseItem from "../components/CourseItem";
 import Footer from "../components/Footer";
@@ -54,7 +55,9 @@ function Courses(props) {
     <section className="courses">
       <div className="d-flex justify-content-between align-items-center mb-5">
         <h1>Courses</h1>
-        <button className="btn btn-primary cc-btn">Create New Course</button>
+        <Link to="/create-course">
+          <button className="btn btn-primary cc-btn">Create New Course</button>
+        </Link>
       </div>
       <div className="courses-list">
         {courses.map((course, index) => {

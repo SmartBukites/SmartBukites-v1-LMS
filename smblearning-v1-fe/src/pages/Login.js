@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "../axios";
+import { setUserSession } from "../utils/Common";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,7 +11,8 @@ import { ReactComponent as Wait } from "../assets/svgs/loader.svg";
 import "./Login.css";
 
 function Login(props) {
-  console.log(props);
+  let history = useHistory();
+
   const [isError, setIsError] = useState(false);
   const [loader, setLoader] = useState(false);
 
@@ -31,9 +34,9 @@ function Login(props) {
         if (response.status === 200 || response.status === 201) {
           console.log(response);
           setLoader(false);
+          setUserSession(response.data.token);
           // setUserSession(response.data.token, response.data.user);
-          console.log(props);
-          props.history.push("/dashboard");
+          history.push("/dashboard");
         } else {
           setIsError(true);
           setLoader(false);
@@ -55,7 +58,7 @@ function Login(props) {
 
           <form onSubmit={handleLogin}>
             <div className="form-group mb-4">
-              <label for="exampleInputEmail1">EMAIL</label>
+              <label htmlFor="exampleInputEmail1">EMAIL</label>
               <input
                 type="email"
                 className="form-control"
@@ -67,7 +70,7 @@ function Login(props) {
               />
             </div>
             <div className="form-group">
-              <label for="exampleInputPassword1">PASSWORD</label>
+              <label htmlFor="exampleInputPassword1">PASSWORD</label>
               <input
                 type="password"
                 className="form-control"

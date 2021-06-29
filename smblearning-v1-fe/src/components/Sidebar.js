@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import User from "../assets/pngs/user.png";
 import dashboard from "../assets/svgs/home.svg";
@@ -11,9 +11,6 @@ import examQuiz from "../assets/svgs/question-mark.svg";
 import "./Sidebar.css";
 
 function Sidebar(props) {
-  const url = useLocation();
-  console.log(url);
-
   return (
     <aside className="sidenav">
       <header className="page-header">
@@ -48,7 +45,7 @@ function Sidebar(props) {
 
             <div className="info">
               <p className="user-name mb-1 font-weight-bolder">
-                Badiru Abubakar
+                {`${props.user.firstName} ${props.user.lastName}`}
               </p>
               <p className="user-role">Admin</p>
             </div>
@@ -79,7 +76,7 @@ function Sidebar(props) {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/examquiz">
+              <NavLink to="/quiz-exams">
                 <img src={examQuiz} alt="exams/quiz" />
                 <span>Exams/Quiz</span>
               </NavLink>

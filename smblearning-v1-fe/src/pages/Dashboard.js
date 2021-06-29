@@ -1,6 +1,7 @@
 import React from "react";
-// import { PieChart } from "react-minimal-pie-chart";
 
+import CourseChart from "../components/CourseChart";
+import EqChart from "../components/EqChart";
 import Footer from "../components/Footer";
 import "./Dashboard.css";
 
@@ -94,23 +95,11 @@ function Dashboard(props) {
         <div className="second-row d-flex">
           <div className="charts">
             <div className="exam_quiz_stats">
-              {/* <PieChart
-                data={[
-                  { title: "One", value: 10, color: "#E38627" },
-                  { title: "Two", value: 15, color: "#C13C37" },
-                  { title: "Three", value: 20, color: "#6A2135" },
-                ]}
-              /> */}
+              <EqChart />
               <p className="text-center">Exam/Quiz</p>
             </div>
             <div className="courses_stats">
-              {/* <PieChart
-                data={[
-                  { title: "One", value: 10, color: "#E38627" },
-                  { title: "Two", value: 15, color: "#C13C37" },
-                  { title: "Three", value: 20, color: "#6A2135" },
-                ]}
-              /> */}
+              <CourseChart />
               <p className="text-center">Courses</p>
             </div>
           </div>

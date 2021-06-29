@@ -4,6 +4,7 @@ import "./UserProfile.css";
 import enrolled from "../assets/svgs/book-round.svg";
 import completed from "../assets/svgs/mark-complete.svg";
 import inprogress from "../assets/svgs/time-progress.svg";
+import Footer from "../components/Footer";
 
 function UserProfile() {
   return (
@@ -34,7 +35,7 @@ function UserProfile() {
               </div>
             </div>
             <div className="in-progress d-flex">
-              <img src={inprogress} alt="in-progress courses" />
+              <img src={inprogress} alt="inprogress courses" />
               <div>
                 <p>3</p>
                 <p>Inprogress</p>
@@ -44,61 +45,61 @@ function UserProfile() {
         </div>
       </div>
       <form action="" className="user-profile-form">
-        <div className="form-row">
-          <div class="form-group">
+        <div className="form-row names">
+          <div className="form-group">
             <label htmlFor="firstName">First Name</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="firstName"
               placeholder="Badiru"
             />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label htmlFor="lastName">Last Name</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="lastName"
               placeholder="Abubakar"
             />
           </div>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="emailAddress">Email address</label>
           <input
             type="email"
-            class="form-control"
+            className="form-control"
             id="emailAddress"
             placeholder="name@example.com"
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number</label>
           <input
             type="tel"
-            class="form-control"
+            className="form-control"
             id="phoneNumber"
             placeholder="Enter your phone number"
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="nationality">Nationality</label>
-          <select class="form-control" id="nationality">
+          <select className="form-control" id="nationality">
             <option>Select Nationality</option>
             <option>Nigeria</option>
             <option>Niger</option>
           </select>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="stateRegion">State/Region</label>
-          <select class="form-control" id="stateRegion">
+          <select className="form-control" id="stateRegion">
             <option>Select State/Region</option>
             <option>Abia</option>
             <option>Adamawa</option>
           </select>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="aboutMe">About me</label>
           <textarea name="aboutMe" id="aboutMe" cols="30" rows="10"></textarea>
         </div>
@@ -109,6 +110,8 @@ function UserProfile() {
           </button>
         </div>
       </form>
+
+      <Footer />
     </div>
   );
 }

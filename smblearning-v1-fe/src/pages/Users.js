@@ -7,6 +7,7 @@ import student from "../assets/svgs/user-round-invert.svg";
 import user from "../assets/svgs/user-round-dark.svg";
 
 import "./Users.css";
+import { Link } from "react-router-dom";
 
 function Users() {
   return (
@@ -92,7 +93,9 @@ function Users() {
               <td>umarfarouq@gmail.com</td>
               <td>Tutor</td>
               <td>5</td>
-              <th scope="row">edit</th>
+              <th scope="row">
+                <Link to="/user-profile">edit</Link>
+              </th>
             </tr>
           </tbody>
         </div>
