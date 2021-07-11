@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="text-center footer mt-3">
+    <footer className="text-center footer mt-5">
       <p>Copyright ©2021 SmartBukites. All rights reserved.</p>{" "}
     </footer>
   );

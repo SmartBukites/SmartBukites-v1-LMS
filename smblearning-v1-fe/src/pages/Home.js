@@ -74,6 +74,7 @@ function Home() {
       <div className="d-flex">
         {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
         {drawerIsOpen && <Sidebar user={user} closeDrawer={closeDrawer} />}
+        
         <>
           <Switch>
             <Route path={`/quiz-exams`}>

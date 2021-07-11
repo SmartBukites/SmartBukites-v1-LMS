@@ -1,21 +1,23 @@
-import React, { Component } from "react";
+import React, {useState} from 'react'
 import ReactQuill from "react-quill"; // ES6
 import "react-quill/dist/quill.snow.css"; // ES6
 import "./DocEditor.css";
 
-export class DocEditor extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { text: "" }; // You can also pass a Quill Delta here
-    this.handleChange = this.handleChange.bind(this);
+function DocEditor({setDescription}) {
+  const [text, setText] = useState('')
+
+  const handleChange = value =>{
+    setDescription(value)
+    setText(value)
   }
 
-  handleChange(value) {
-    this.setState({ text: value });
-  }
-  render() {
-    return <ReactQuill value={this.state.text} onChange={this.handleChange} />;
-  }
+  
+  return (
+    <div>
+      <ReactQuill value={text} onChange={handleChange} />
+    </div>
+  )
 }
 
-export default DocEditor;
+export default DocEditor
+

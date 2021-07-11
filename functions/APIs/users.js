@@ -47,6 +47,8 @@ exports.signUpUser = (request, response) => {
     password: request.body.password,
     confirmPassword: request.body.confirmPassword,
     username: request.body.username,
+    userType: request.body.userType || "student",
+    courses: request.bodyy.courses,
   };
 
   const { valid, errors } = validateSignUpData(newUser);
@@ -81,6 +83,8 @@ exports.signUpUser = (request, response) => {
         country: newUser.country,
         email: newUser.email,
         createdAt: new Date().toISOString(),
+        userType: newUser.userType,
+        courses: newUser.courses,
         userId,
       };
       return db.doc(`/users/${newUser.username}`).set(userCredentials);

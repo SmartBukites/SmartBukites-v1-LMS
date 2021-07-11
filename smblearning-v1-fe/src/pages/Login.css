@@ -43,6 +43,7 @@
   background: rgba(0, 178, 238, 1);
   border: rgba(0, 178, 238, 1);
   border-radius: 15px;
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {

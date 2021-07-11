@@ -51,7 +51,7 @@ function Login(props) {
   return (
     <>
       <Navbar />
-      <div className="login">
+      <div className="login mt-5">
         <div className="center">
           <h1>Welcome to SmartBukite Academy</h1>
           <p>Login and continue to enjoy our unique services</p>

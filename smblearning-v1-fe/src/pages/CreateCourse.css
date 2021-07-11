@@ -50,6 +50,10 @@
 .course_create .ctitle_btns .btn-link {
   color: rgba(238, 60, 0, 1);
 }
+.course_create .ctitle_btns .btn-link:hover {
+  color: rgba(238, 60, 0, 1);
+  text-decoration: none;
+}
 
 .course_create .contents ._left {
   border: 1px solid #cccccc;
@@ -66,12 +70,22 @@
 .course_create .contents ._left .topics {
   border-bottom: 1px solid #cccccc;
 }
-.course_create .contents ._left .topics p,
-.course_create .contents ._left .exam p {
+.course_create ._left .topics p,
+.course_create ._left .exam p {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.5em;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.course_create ._left .topics ul,
+.course_create ._left .exam ul {
+  padding: 0;
+}
+.course_create ._left .topics li,
+.course_create ._left .exam li {
+  list-style: none;
+  cursor: pointer;
 }
 
 .course_create .contents ._right .course_thumbnail p {
